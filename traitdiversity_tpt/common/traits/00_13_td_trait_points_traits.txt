@@ -1,0 +1,151 @@
+# *
+# Traits (Add-on) - Extra Trait Points
+#
+#
+# 1. Biological
+# 2. Robotic
+# *
+
+
+
+# *
+# Biological
+# *
+
+
+trait_td_perfect = {
+	cost = -4
+	potential_crossbreeding_chance = 0
+	sorting_priority = 8
+	custom_tooltip = TRAIT_TD_PERFECT_EFFECT
+
+	modification = no
+
+	opposites = {
+		"trait_td_gifted"
+		"trait_td_superior"
+		"trait_td_inferior"
+		"trait_td_incapable"
+		"trait_td_failure"
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+}
+
+
+trait_td_gifted = {
+	cost = -2
+	potential_crossbreeding_chance = 0.25
+	sorting_priority = 8
+	custom_tooltip = TRAIT_TD_GIFTED_EFFECT
+
+	modification = no
+
+	opposites = {
+		"trait_td_superior"
+		"trait_td_inferior"
+		"trait_td_incapable"
+		"trait_td_failure"
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+}
+
+
+trait_td_superior = {
+	cost = -1
+	potential_crossbreeding_chance = 0.50
+	sorting_priority = 8
+	custom_tooltip = TRAIT_TD_SUPERIOR_EFFECT
+
+	initial = yes
+	randomized = yes
+	advanced_trait = yes
+
+	opposites = {
+		"trait_td_inferior"
+		"trait_td_incapable"
+		"trait_td_failure"
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	ai_weight = { weight = 0 }
+}
+
+
+trait_td_inferior = {
+	cost = 1
+	potential_crossbreeding_chance = 0.50
+	sorting_priority = 8
+	custom_tooltip = TRAIT_TD_INFERIOR_EFFECT
+
+	initial = yes
+	randomized = yes
+	advanced_trait = yes
+
+	opposites = {
+		"trait_td_incapable"
+		"trait_td_failure"
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	ai_weight = { weight = 0 }
+}
+
+
+trait_td_incapable = {
+	cost = 2
+	potential_crossbreeding_chance = 0.25
+	sorting_priority = 8
+	custom_tooltip = TRAIT_TD_INCAPABLE_EFFECT
+
+	initial = yes
+	randomized = yes
+	advanced_trait = yes
+
+	opposites = {
+		"trait_td_failure"
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	ai_weight = { weight = 0 }
+}
+
+
+trait_td_failure = {
+	cost = 4
+	potential_crossbreeding_chance = 0
+	sorting_priority = 8
+	custom_tooltip = TRAIT_TD_FAILURE_EFFECT
+
+	modification = no
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+}
+
+
+
+# *
+# Robotic
+# *
+
+
+trait_td_rbot_excellent = {
+	cost = -2
+	sorting_priority = 8
+	custom_tooltip = TRAIT_TD_RBOT_EXCELLENT_EFFECT
+
+	modification = no
+
+	opposites = {
+		"trait_td_rbot_scrap"
+	}
+	allowed_archetypes = { MACHINE }
+}
+
+
+trait_td_rbot_scrap = {
+	cost = 1
+	sorting_priority = 8
+	icon = "gfx/interface/icons/traits/trait_td_inferior.dds"
+	custom_tooltip = TRAIT_TD_RBOT_SCRAP_EFFECT
+
+	modification = no
+
+	allowed_archetypes = { MACHINE }
+}
