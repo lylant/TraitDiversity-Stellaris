@@ -340,7 +340,6 @@ trait_td_camouflage = {
 		"trait_extremely_adaptive"
 		"trait_adaptive"
 		"trait_nonadaptive"
-		"trait_td_camouflage"
 		"trait_td_harmonization"
 		"trait_td_slow_adaption"
 		"trait_td_nostalgia"
