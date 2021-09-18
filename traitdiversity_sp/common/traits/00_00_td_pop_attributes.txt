@@ -287,7 +287,9 @@ trait_td_assimilation = {
 		"trait_nonadaptive"
 		"trait_td_fast_adaption"
 		"trait_td_camouflage"
+		"trait_td_rept_camouflage"
 		"trait_td_harmonization"
+		"trait_td_plnt_harmonization"
 		"trait_td_slow_adaption"
 		"trait_td_nostalgia"
 		"trait_td_paradise_lost"
@@ -313,7 +315,9 @@ trait_td_fast_adaption = {
 		"trait_adaptive"
 		"trait_nonadaptive"
 		"trait_td_camouflage"
+		"trait_td_rept_camouflage"
 		"trait_td_harmonization"
+		"trait_td_plnt_harmonization"
 		"trait_td_slow_adaption"
 		"trait_td_nostalgia"
 		"trait_td_paradise_lost"
@@ -338,16 +342,44 @@ trait_td_camouflage = {
 		"trait_adaptive"
 		"trait_nonadaptive"
 		"trait_td_harmonization"
+		"trait_td_plnt_harmonization"
 		"trait_td_slow_adaption"
 		"trait_td_nostalgia"
 		"trait_td_paradise_lost"
 	}
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { MAM AVI ART MOL FUN PLANT NECROID HUM PRE_MAM PRE_AVI PRE_ART PRE_MOL PRE_FUN }
 	slave_cost = { energy = 25 }
 
 	modifier = {
 		pop_environment_tolerance = 0.05
 		army_health = 0.10
+	}
+}
+
+
+trait_td_rept_camouflage = {
+	cost = 1
+	potential_crossbreeding_chance = 1.00
+	icon = "gfx/interface/icons/traits/imported_icons/trait_bioadaptability.dds"
+
+	opposites = {
+		"trait_robust"
+		"trait_extremely_adaptive"
+		"trait_adaptive"
+		"trait_nonadaptive"
+		"trait_td_harmonization"
+		"trait_td_slow_adaption"
+		"trait_td_nostalgia"
+		"trait_td_paradise_lost"
+	}
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { REP PRE_REP }
+	slave_cost = { energy = 25 }
+
+	modifier = {
+		pop_environment_tolerance = 0.075
+		army_health = 0.15
 	}
 }
 
@@ -366,6 +398,34 @@ trait_td_harmonization = {
 		"trait_td_paradise_lost"
 	}
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { MAM REP AVI ART MOL NECROID HUM PRE_MAM PRE_REP PRE_AVI PRE_ART PRE_MOL }
+	ai_weight = { weight = 0 }
+	slave_cost = { energy = 25 }
+
+	modifier = {
+		pop_environment_tolerance = 0.075
+		pop_growth_from_immigration = -0.25
+		pop_resettlement_cost_mult = 0.50
+	}
+}
+
+
+trait_td_plnt_harmonization = {
+	cost = -1
+	potential_crossbreeding_chance = 1.00
+	icon = "gfx/interface/icons/traits/trait_td_harmonization.dds"
+
+	opposites = {
+		"trait_robust"
+		"trait_extremely_adaptive"
+		"trait_adaptive"
+		"trait_nonadaptive"
+		"trait_td_slow_adaption"
+		"trait_td_nostalgia"
+		"trait_td_paradise_lost"
+	}
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { PLANT FUN PRE_FUN }
 	ai_weight = { weight = 0 }
 	slave_cost = { energy = 25 }
 

@@ -25,34 +25,10 @@ trait_td_heroism = {
 		"trait_td_arrested_learning"
 	}
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
-	species_class = { AVI REP ART MOL FUN PLANT NECROID PRE_AVI PRE_REP PRE_ART PRE_MOL PRE_FUN }
 
 	modifier = {
 		leader_skill_levels = 3
 		species_leader_exp_gain = 0.05
-	}
-}
-
-
-trait_td_humn_heroism = {
-	cost = 3
-	potential_crossbreeding_chance = 1.00
-	icon = "gfx/interface/icons/traits/trait_td_heroism.dds"
-
-	opposites = {
-		"trait_talented"
-		"trait_quick_learners"
-		"trait_slow_learners"
-		"trait_td_humn_born_to_rule"
-		"trait_td_arrested_learning"
-	}
-	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
-	species_class = { MAM HUM PRE_MAM }
-
-	modifier = {
-		leader_skill_levels = 3
-		species_leader_exp_gain = 0.10
-		leader_age = 5
 	}
 }
 
@@ -68,32 +44,10 @@ trait_td_born_to_rule = {
 		"trait_td_arrested_learning"
 	}
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
-	species_class = { AVI REP ART MOL FUN PLANT NECROID PRE_AVI PRE_REP PRE_ART PRE_MOL PRE_FUN }
 
 	modifier = {
 		leader_skill_levels = 2
 		species_leader_exp_gain = 0.20
-	}
-}
-
-
-trait_td_humn_born_to_rule = {
-	cost = 3
-	potential_crossbreeding_chance = 1.00
-	icon = "gfx/interface/icons/traits/trait_td_born_to_rule.dds"
-
-	opposites = {
-		"trait_talented"
-		"trait_quick_learners"
-		"trait_slow_learners"
-		"trait_td_arrested_learning"
-	}
-	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
-	species_class = { MAM HUM PRE_MAM }
-
-	modifier = {
-		leader_skill_levels = 2
-		species_leader_exp_gain = 0.30
 	}
 }
 

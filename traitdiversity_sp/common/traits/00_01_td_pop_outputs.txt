@@ -28,7 +28,7 @@ trait_td_paragon = {
 	randomized = yes
 	advanced_trait = yes
 
-	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID PLANTOID }
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	slave_cost = { energy = 250 }
 
 	modifier = {
@@ -57,7 +57,7 @@ trait_td_lazy = {
 	opposites = {
 		"trait_industrious"
 	}
-	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID PLANTOID }
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	ai_weight = { weight = 0 }
 	slave_cost = { energy = -150 }
 
@@ -87,10 +87,34 @@ trait_td_fruitage = {
 		"trait_td_abominations"
 	}
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { MAM REP AVI ART MOL NECROID HUM PRE_MAM PRE_REP PRE_AVI PRE_ART PRE_MOL }
 	slave_cost = { energy = 25 }
 
 	modifier = {
 		planet_jobs_food_produces_mult = 0.075
+	}
+}
+
+
+trait_td_plnt_fruitage = {
+	cost = 1
+	potential_crossbreeding_chance = 1.00
+	icon = "gfx/interface/icons/traits/imported_icons/leader_trait_food.dds"
+
+	opposites = {
+		"trait_agrarian"
+		"trait_td_hunter_gatherers"
+		"trait_td_hunters"
+		"trait_td_gatherers"
+		"trait_td_eolithic"
+		"trait_td_abominations"
+	}
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { PLANT FUN PRE_FUN }
+	slave_cost = { energy = 25 }
+
+	modifier = {
+		planet_jobs_food_produces_mult = 0.125
 	}
 }
 
@@ -235,7 +259,7 @@ trait_td_radiant_vein = {
 
 	modifier = {
 		planet_jobs_energy_produces_mult = 0.075
-		#planet_livestock_energy_produces_add = 0.25
+		planet_livestock_energy_produces_add = 0.25
 	}
 }
 
@@ -255,7 +279,7 @@ trait_td_metallizing_touch = {
 		"trait_td_ignis_fatuus"
 		"trait_td_flintknapping"
 	}
-	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID PLANTOID }
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 
 	modifier = {
 		planet_jobs_alloys_produces_mult = 0.10
@@ -280,24 +304,6 @@ trait_td_pyrokinetic = {
 }
 
 
-trait_td_plnt_pyrokinetic = {
-	cost = 2
-	potential_crossbreeding_chance = 1.00
-	icon = "gfx/interface/icons/traits/trait_td_pyrokinetic.dds"
-
-	opposites = {
-		"trait_td_plnt_ignis_fatuus"
-		"trait_td_flintknapping"
-	}
-	allowed_archetypes = { PLANTOID }
-
-	modifier = {
-		planet_jobs_alloys_produces_mult = 0.025
-		army_damage_mult = 0.20
-	}
-}
-
-
 trait_td_ignis_fatuus = {
 	cost = 1
 	potential_crossbreeding_chance = 1.00
@@ -316,29 +322,11 @@ trait_td_ignis_fatuus = {
 }
 
 
-trait_td_plnt_ignis_fatuus = {
-	cost = 1
-	potential_crossbreeding_chance = 1.00
-	icon = "gfx/interface/icons/traits/imported_icons/vo_slick_corp.dds"
-
-	opposites = {
-		"trait_td_flintknapping"
-	}
-	allowed_archetypes = { PLANTOID }
-
-	modifier = {
-		planet_jobs_alloys_produces_mult = 0.025
-		army_damage_mult = 0.10
-		army_morale = -0.20
-	}
-}
-
-
 trait_td_flintknapping = {
 	cost = -2
 	potential_crossbreeding_chance = 1.00
 
-	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID PLANTOID }
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	ai_weight = { weight = 0 }
 
 	modifier = {
@@ -366,7 +354,7 @@ trait_td_genius = {
 		"trait_td_vacuous"
 		"trait_td_great_excuses"
 	}
-	allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
 
 	modifier = {
 		planet_jobs_engineering_research_produces_mult = 0.175
@@ -388,7 +376,7 @@ trait_td_brilliant = {
 		"trait_td_vacuous"
 		"trait_td_great_excuses"
 	}
-	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID PLANTOID }
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 
 	modifier = {
 		planet_jobs_engineering_research_produces_mult = 0.15
@@ -409,7 +397,7 @@ trait_td_vacuous = {
 		"trait_intelligent"
 		"trait_td_great_excuses"
 	}
-	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID PLANTOID }
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	ai_weight = { weight = 0 }
 
 	modifier = {
@@ -429,7 +417,7 @@ trait_td_great_excuses = {
 		"trait_erudite"
 		"trait_intelligent"
 	}
-	allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
 	ai_weight = { weight = 0 }
 
 	modifier = {
@@ -463,7 +451,7 @@ trait_td_technicism = {
 		"trait_td_numerophobes"
 		"trait_td_verbophobes"
 	}
-	allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
 
 	modifier = {
 		planet_jobs_engineering_research_produces_mult = 0.275
@@ -489,7 +477,7 @@ trait_td_physicalism = {
 		"trait_td_numerophobes"
 		"trait_td_verbophobes"
 	}
-	allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
 
 	modifier = {
 		planet_jobs_physics_research_produces_mult = 0.275
@@ -514,7 +502,7 @@ trait_td_biologism = {
 		"trait_td_numerophobes"
 		"trait_td_verbophobes"
 	}
-	allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
 
 	modifier = {
 		planet_jobs_society_research_produces_mult = 0.275
@@ -539,7 +527,7 @@ trait_td_technological_lag = {
 		"trait_td_numerophobes"
 		"trait_td_verbophobes"
 	}
-	allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
 
 	modifier = {
 		planet_jobs_engineering_research_produces_mult = -0.15
@@ -562,7 +550,7 @@ trait_td_cultural_lag = {
 		"trait_td_numerophobes"
 		"trait_td_verbophobes"
 	}
-	allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
 
 	modifier = {
 		planet_jobs_society_research_produces_mult = -0.15
@@ -583,7 +571,7 @@ trait_td_technophobes = {
 		"trait_td_numerophobes"
 		"trait_td_verbophobes"
 	}
-	allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
 	ai_weight = { weight = 0 }
 
 	modifier = {
@@ -605,7 +593,7 @@ trait_td_numerophobes = {
 		"trait_natural_sociologists"
 		"trait_td_verbophobes"
 	}
-	allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
 	ai_weight = { weight = 0 }
 
 	modifier = {
@@ -626,7 +614,7 @@ trait_td_verbophobes = {
 		"trait_natural_physicists"
 		"trait_natural_sociologists"
 	}
-	allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
 	ai_weight = { weight = 0 }
 
 	modifier = {
@@ -656,7 +644,7 @@ trait_td_army_traditions = {
 		"trait_td_aggressive"
 		"trait_td_bloodthirsty"
 	}
-	allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
 
 	modifier = {
 		planet_jobs_unity_produces_mult = 0.125
@@ -676,7 +664,7 @@ trait_td_symbiotic = {
 		"trait_td_aggressive"
 		"trait_td_bloodthirsty"
 	}
-	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID PLANTOID }
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	slave_cost = { energy = 25 }
 
 	modifier = {
@@ -695,7 +683,7 @@ trait_td_aggressive = {
 		"trait_quarrelsome"
 		"trait_td_bloodthirsty"
 	}
-	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID PLANTOID }
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	ai_weight = { weight = 0 }
 
 	modifier = {
@@ -714,7 +702,7 @@ trait_td_bloodthirsty = {
 		"trait_traditional"
 		"trait_quarrelsome"
 	}
-	allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
 	ai_weight = { weight = 0 }
 
 	modifier = {
@@ -730,81 +718,57 @@ trait_td_bloodthirsty = {
 # Livestock Outputs
 # *
 
-# Photosynthesis mod alters the mechanism for the livestocks;
-# Photosynthesis uses some modifiers for livestocks instead of using the livestock job.
-# This traits requires the livestock as job so this category is disabled.
+
+trait_td_meatballs = {
+	cost = 1
+	potential_crossbreeding_chance = 1.00
+
+	opposites = {
+		"trait_delicious"
+		"trait_td_toxic"
+		"trait_td_bitter"
+		"trait_td_boneless"
+	}
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	slave_cost = { energy = 50 }
+
+	modifier = {
+		planet_livestock_food_produces_add = 1.25
+		army_health = -0.15
+	}
+}
 
 
-#trait_td_meatballs = {
-#	cost = 1
-#	potential_crossbreeding_chance = 1.00
-#
-#	opposites = {
-#		"trait_delicious"
-#		"trait_td_toxic"
-#		"trait_td_bitter"
-#		"trait_td_boneless"
-#	}
-#	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
-#	slave_cost = { energy = 50 }
-#
-#	modifier = {
-#		planet_livestock_food_produces_add = 1.25
-#		army_health = -0.15
-#	}
-#}
+trait_td_toxic = {
+	cost = 1
+	potential_crossbreeding_chance = 1.00
+
+	opposites = {
+		"trait_delicious"
+		"trait_td_bitter"
+	}
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	slave_cost = { energy = -100 }
+
+	modifier = {
+		planet_livestock_food_produces_add = -4.00
+		pc_nuked_habitability = 0.20
+	}
+}
 
 
-#trait_td_plnt_fruitage = {
-#	cost = 1
-#	potential_crossbreeding_chance = 1.00
-#	icon = "gfx/interface/icons/traits/imported_icons/leader_trait_food.dds"
-#
-#	opposites = {
-#		"trait_delicious"
-#		"trait_td_toxic"
-#		"trait_td_bitter"
-#		"trait_td_boneless"
-#	}
-#	allowed_archetypes = { PLANTOID }
-#	slave_cost = { energy = 50 }
-#
-#	modifier = {
-#		planet_livestock_food_produces_add = 1.25
-#	}
-#}
+trait_td_bitter = {
+	cost = 0
+	potential_crossbreeding_chance = 1.00
 
+	opposites = {
+		"trait_delicious"
+	}
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	ai_weight = { weight = 0 }
+	slave_cost = { energy = -50 }
 
-#trait_td_toxic = {
-#	cost = 1
-#	potential_crossbreeding_chance = 1.00
-#
-#	opposites = {
-#		"trait_delicious"
-#		"trait_td_bitter"
-#	}
-#	allowed_archetypes = { BIOLOGICAL PRESAPIENT PLANTOID }
-#	slave_cost = { energy = -100 }
-#
-#	modifier = {
-#		planet_livestock_food_produces_add = -4.00
-#		pc_nuked_habitability = 0.20
-#	}
-#}
-
-
-#trait_td_bitter = {
-#	cost = 0
-#	potential_crossbreeding_chance = 1.00
-#
-#	opposites = {
-#		"trait_delicious"
-#	}
-#	allowed_archetypes = { BIOLOGICAL PRESAPIENT PLANTOID }
-#	ai_weight = { weight = 0 }
-#	slave_cost = { energy = -50 }
-#
-#	modifier = {
-#		planet_livestock_food_produces_add = -2.00
-#	}
-#}
+	modifier = {
+		planet_livestock_food_produces_add = -2.00
+	}
+}

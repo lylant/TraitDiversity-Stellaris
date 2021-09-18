@@ -334,11 +334,34 @@ trait_td_aerobatics = {
 		"trait_td_air_swimming"
 	}
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { MAM REP ART MOL FUN PLANT NECROID HUM PRE_MAM PRE_REP PRE_ART PRE_MOL PRE_FUN }
 	slave_cost = { energy = 25 }
 
 	modifier = {
 		pop_amenities_usage_mult = -0.05
 		pop_housing_usage_mult = -0.05
+		pop_environment_tolerance = 0.05
+		army_morale = 0.10
+	}
+}
+
+
+trait_td_avin_aerobatics = {
+	cost = 2
+	potential_crossbreeding_chance = 1.00
+	icon = "gfx/interface/icons/traits/trait_td_aerobatics.dds"
+
+	opposites = {
+		"trait_td_avin_flying"
+		"trait_td_air_swimming"
+	}
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { AVI PRE_AVI }
+	slave_cost = { energy = 25 }
+
+	modifier = {
+		pop_amenities_usage_mult = -0.075
+		pop_housing_usage_mult = -0.075
 		pop_environment_tolerance = 0.05
 		army_morale = 0.10
 	}
@@ -353,10 +376,29 @@ trait_td_flying = {
 		"trait_td_air_swimming"
 	}
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { MAM REP ART MOL FUN PLANT NECROID HUM PRE_MAM PRE_REP PRE_ART PRE_MOL PRE_FUN }
 
 	modifier = {
 		pop_amenities_usage_mult = -0.05
 		pop_housing_usage_mult = -0.05
+	}
+}
+
+
+trait_td_avin_flying = {
+	cost = 1
+	potential_crossbreeding_chance = 1.00
+	icon = "gfx/interface/icons/traits/trait_td_flying.dds"
+
+	opposites = {
+		"trait_td_air_swimming"
+	}
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { AVI PRE_AVI }
+
+	modifier = {
+		pop_amenities_usage_mult = -0.075
+		pop_housing_usage_mult = -0.075
 	}
 }
 
@@ -687,11 +729,27 @@ trait_td_tail_blades = {
 	potential_crossbreeding_chance = 1.00
 
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_class = { MAM AVI REP MOL FUN PLANT NECROID HUM PRE_MAM PRE_AVI PRE_REP PRE_MOL PRE_FUN }
 
 	modifier = {
 		army_damage_mult = 0.25
 	}
 }
+
+
+trait_td_arth_tail_blades = {
+	cost = 1
+	potential_crossbreeding_chance = 1.00
+	icon = "gfx/interface/icons/traits/trait_td_tail_blades.dds"
+
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { ART PRE_ART }
+
+	modifier = {
+		army_damage_mult = 0.40
+	}
+}
+
 
 
 # *
@@ -1027,15 +1085,19 @@ trait_td_healing_factor = {
 
 	opposites = {
 		"trait_td_dragon_scales"
+		"trait_td_rept_dragon_scales"
 		"trait_td_petrification"
 		"trait_td_metal_exoskeleton"
 		"trait_td_carapace"
+		"trait_td_arth_carapace"
 		"trait_td_persistent"
 		"trait_td_iron_bone"
 		"trait_td_translucent_skin"
+		"trait_td_mols_translucent_skin"
 		"trait_td_deformed"
 		"trait_td_rotting_body"
 		"trait_td_boneless"
+		"trait_td_mols_boneless"
 		"trait_td_hemophilia"
 		"trait_td_inside_out"
 	}
@@ -1084,6 +1146,39 @@ trait_td_dragon_scales = {
 		"trait_td_petrification"
 		"trait_td_metal_exoskeleton"
 		"trait_td_carapace"
+		"trait_td_arth_carapace"
+		"trait_td_persistent"
+		"trait_td_iron_bone"
+		"trait_td_translucent_skin"
+		"trait_td_mols_translucent_skin"
+		"trait_td_deformed"
+		"trait_td_rotting_body"
+		"trait_td_boneless"
+		"trait_td_mols_boneless"
+		"trait_td_hemophilia"
+		"trait_td_inside_out"
+	}
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { MAM AVI ART MOL FUN PLANT NECROID HUM PRE_MAM PRE_AVI PRE_ART PRE_MOL PRE_FUN }
+	slave_cost = { energy = 25 }
+
+	modifier = {
+		army_health = 0.40
+		pop_environment_tolerance = 0.075
+	}
+}
+
+
+trait_td_rept_dragon_scales = {
+	cost = 3
+	potential_crossbreeding_chance = 1.00
+	icon = "gfx/interface/icons/traits/trait_td_dragon_scales.dds"
+
+	opposites = {
+		"trait_td_petrification"
+		"trait_td_metal_exoskeleton"
+		"trait_td_carapace"
+		"trait_td_arth_carapace"
 		"trait_td_persistent"
 		"trait_td_iron_bone"
 		"trait_td_translucent_skin"
@@ -1094,11 +1189,12 @@ trait_td_dragon_scales = {
 		"trait_td_inside_out"
 	}
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { REP PRE_REP }
 	slave_cost = { energy = 25 }
 
 	modifier = {
 		army_health = 0.40
-		pop_environment_tolerance = 0.075
+		pop_environment_tolerance = 0.10
 	}
 }
 
@@ -1110,12 +1206,15 @@ trait_td_petrification = {
 	opposites = {
 		"trait_td_metal_exoskeleton"
 		"trait_td_carapace"
+		"trait_td_arth_carapace"
 		"trait_td_persistent"
 		"trait_td_iron_bone"
 		"trait_td_translucent_skin"
+		"trait_td_mols_translucent_skin"
 		"trait_td_deformed"
 		"trait_td_rotting_body"
 		"trait_td_boneless"
+		"trait_td_mols_boneless"
 		"trait_td_hemophilia"
 		"trait_td_inside_out"
 	}
@@ -1134,13 +1233,16 @@ trait_td_metal_exoskeleton = {
 
 	opposites = {
 		"trait_td_carapace"
+		"trait_td_arth_carapace"
 		"trait_td_persistent"
 		"trait_td_iron_bone"
 		"trait_td_translucent_skin"
+		"trait_td_mols_translucent_skin"
 		"trait_td_lith_aerogel_skin"
 		"trait_td_deformed"
 		"trait_td_rotting_body"
 		"trait_td_boneless"
+		"trait_td_mols_boneless"
 		"trait_td_lith_weathering"
 		"trait_td_lith_holey"
 		"trait_td_hemophilia"
@@ -1165,6 +1267,34 @@ trait_td_carapace = {
 		"trait_td_persistent"
 		"trait_td_iron_bone"
 		"trait_td_translucent_skin"
+		"trait_td_mols_translucent_skin"
+		"trait_td_deformed"
+		"trait_td_rotting_body"
+		"trait_td_boneless"
+		"trait_td_mols_boneless"
+		"trait_td_hemophilia"
+		"trait_td_inside_out"
+	}
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { MAM AVI REP MOL FUN PLANT NECROID HUM PRE_MAM PRE_AVI PRE_REP PRE_MOL PRE_FUN }
+	slave_cost = { energy = 50 }
+
+	modifier = {
+		army_health = 0.20
+		planet_jobs_worker_produces_mult = 0.025
+	}
+}
+
+
+trait_td_arth_carapace = {
+	cost = 1
+	potential_crossbreeding_chance = 1.00
+	icon = "gfx/interface/icons/traits/trait_td_carapace.dds"
+
+	opposites = {
+		"trait_td_persistent"
+		"trait_td_iron_bone"
+		"trait_td_translucent_skin"
 		"trait_td_deformed"
 		"trait_td_rotting_body"
 		"trait_td_boneless"
@@ -1172,10 +1302,11 @@ trait_td_carapace = {
 		"trait_td_inside_out"
 	}
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { ART PRE_ART }
 	slave_cost = { energy = 50 }
 
 	modifier = {
-		army_health = 0.20
+		army_health = 0.30
 		planet_jobs_worker_produces_mult = 0.025
 	}
 }
@@ -1188,10 +1319,12 @@ trait_td_persistent = {
 	opposites = {
 		"trait_td_iron_bone"
 		"trait_td_translucent_skin"
+		"trait_td_mols_translucent_skin"
 		"trait_td_lith_aerogel_skin"
 		"trait_td_deformed"
 		"trait_td_rotting_body"
 		"trait_td_boneless"
+		"trait_td_mols_boneless"
 		"trait_td_lith_weathering"
 		"trait_td_lith_holey"
 		"trait_td_hemophilia"
@@ -1212,9 +1345,11 @@ trait_td_iron_bone = {
 
 	opposites = {
 		"trait_td_translucent_skin"
+		"trait_td_mols_translucent_skin"
 		"trait_td_deformed"
 		"trait_td_rotting_body"
 		"trait_td_boneless"
+		"trait_td_mols_boneless"
 		"trait_td_hemophilia"
 		"trait_td_inside_out"
 	}
@@ -1240,11 +1375,35 @@ trait_td_translucent_skin = {
 		"trait_td_inside_out"
 	}
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { MAM AVI REP ART FUN PLANT NECROID HUM PRE_MAM PRE_AVI PRE_REP PRE_ART PRE_FUN }
 	slave_cost = { energy = 25 }
 
 	modifier = {
 		army_health = 0.15
 		pop_environment_tolerance = 0.025
+	}
+}
+
+
+trait_td_mols_translucent_skin = {
+	cost = 1
+	potential_crossbreeding_chance = 1.00
+	icon = "gfx/interface/icons/traits/trait_td_translucent_skin.dds"
+
+	opposites = {
+		"trait_td_deformed"
+		"trait_td_rotting_body"
+		"trait_td_mols_boneless"
+		"trait_td_hemophilia"
+		"trait_td_inside_out"
+	}
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { MOL PRE_MOL }
+	slave_cost = { energy = 25 }
+
+	modifier = {
+		army_health = 0.15
+		pop_environment_tolerance = 0.05
 	}
 }
 
@@ -1276,6 +1435,7 @@ trait_td_deformed = {
 	opposites = {
 		"trait_td_rotting_body"
 		"trait_td_boneless"
+		"trait_td_mols_boneless"
 		"trait_td_lith_weathering"
 		"trait_td_lith_holey"
 		"trait_td_hemophilia"
@@ -1298,6 +1458,7 @@ trait_td_rotting_body = {
 
 	opposites = {
 		"trait_td_boneless"
+		"trait_td_mols_boneless"
 		"trait_td_hemophilia"
 		"trait_td_inside_out"
 	}
@@ -1320,12 +1481,35 @@ trait_td_boneless = {
 		"trait_td_inside_out"
 	}
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { MAM AVI REP ART FUN PLANT NECROID HUM PRE_MAM PRE_AVI PRE_REP PRE_ART PRE_FUN }
 	slave_cost = { energy = 25 }
 	ai_weight = { weight = 0 }
 
 	modifier = {
 		army_health = -0.15
 		planet_pops_food_upkeep_mult = -0.075
+		planet_livestock_food_produces_add = 0.5
+	}
+}
+
+
+trait_td_mols_boneless = {
+	cost = -1
+	potential_crossbreeding_chance = 1.00
+	icon = "gfx/interface/icons/traits/trait_td_boneless.dds"
+
+	opposites = {
+		"trait_td_hemophilia"
+		"trait_td_inside_out"
+	}
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { MOL PRE_MOL }
+	slave_cost = { energy = 25 }
+	ai_weight = { weight = 0 }
+
+	modifier = {
+		army_health = -0.15
+		planet_pops_food_upkeep_mult = -0.10
 		planet_livestock_food_produces_add = 0.5
 	}
 }
