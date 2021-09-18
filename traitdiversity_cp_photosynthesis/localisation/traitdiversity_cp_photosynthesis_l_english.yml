@@ -14,9 +14,6 @@ mod_planet_pops_organics_energy_upkeep_mult:0 "Pop £energy£ $energy$ Upkeep"
 # Traits (Add-on) - Photosynthesis Compatibility Patch
 # *
 
-trait_td_plnt_fruitage:0 "$trait_td_fruitage$"
-trait_td_plnt_fruitage_desc:0 "$trait_td_fruitage_desc$"
-
 trait_td_plnt_pyrokinetic:0 "$trait_td_pyrokinetic$"
 trait_td_plnt_pyrokinetic_desc:0 "$trait_td_pyrokinetic_desc$"
 

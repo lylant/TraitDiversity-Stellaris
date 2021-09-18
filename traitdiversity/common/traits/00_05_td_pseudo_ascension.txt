@@ -44,7 +44,6 @@ trait_td_echoes_of_the_dead = {
 		"trait_td_ghosts"
 		"trait_td_flesh_and_spirit"
 		"trait_td_living_dead"
-		"trait_td_necr_living_dead"
 		"trait_td_lith_living_dead"
 		"trait_td_shifting_souls"
 		"trait_td_artificial_spirits"
@@ -65,7 +64,6 @@ trait_td_flesh_and_spirit = {
 	opposites = {
 		"trait_td_ghosts"
 		"trait_td_living_dead"
-		"trait_td_necr_living_dead"
 		"trait_td_lith_living_dead"
 		"trait_td_shifting_souls"
 		"trait_td_artificial_spirits"
@@ -93,34 +91,11 @@ trait_td_living_dead = {
 		"trait_td_artificial_spirits"
 	}
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
-	species_class = { MAM AVI REP ART MOL FUN PLANT HUM PRE_MAM PRE_AVI PRE_REP PRE_ART PRE_MOL PRE_FUN }
 	ai_weight = { weight = 0 }
 
 	modifier = {
 		army_damage_mult = -0.20
 		army_morale = -0.20
-		army_health = -0.20
-	}
-}
-
-
-trait_td_necr_living_dead = {
-	cost = -2
-	potential_crossbreeding_chance = 0.25
-	icon = "gfx/interface/icons/traits/trait_td_living_dead.dds"
-
-	opposites = {
-		"trait_td_ghosts"
-		"trait_td_shifting_souls"
-		"trait_td_artificial_spirits"
-	}
-	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
-	species_class = { NECROID }
-	ai_weight = { weight = 0 }
-
-	modifier = {
-		army_damage_mult = -0.05
-		army_morale = -0.05
 		army_health = -0.20
 	}
 }
