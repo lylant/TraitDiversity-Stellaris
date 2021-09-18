@@ -1,4 +1,4 @@
-﻿l_english:
+﻿l_german:
 
 
 
@@ -18,10 +18,6 @@ mod_planet_pops_minerals_upkeep_mult:0 "Pop £minerals£ $minerals$ Upkeep"
 
 mod_planet_pops_consumer_goods_upkeep_mult:0 "Pop £consumer_goods£ $consumer_goods$ Upkeep"
 
-MOD_TD_FORCED_HAPPINESS:0 "§YDisabled Happiness, will not be affected by happiness§!"
-
-MOD_TD_LEADER_IMMORTAL:0 "§GImmortal, will never die of old age§!"
-
 MOD_TD_LEADER_AGE_RANGE:0 "Age Range of Recruited Leaders"
 
 MOD_TD_TRAIT_POINT_ADD:0 "Trait Points Available"
@@ -37,15 +33,12 @@ MOD_TD_TRAIT_POINT_ADD:0 "Trait Points Available"
 
 trait_td_multi_hiveminded:0 "Multi-hiveminded"
 trait_td_multi_hiveminded_desc:0 "§LAmong this species are several hive-minds in the process of unification. Each hive-mind core functions as a leader, but their capabilities are diminished while sustaining the consciousness.§!"
-TRAIT_TD_MULTI_HIVEMINDED_EFFECT:0 "$mod_planet_jobs_worker_produces_mult$: §G+7.5%§!\n$mod_planet_jobs_unity_produces_mult$: §G+12.5%§!\n$MOD_LEADER_SKILL_LEVELS$: §R-1§!\n$MOD_TD_FORCED_HAPPINESS$"
 
 trait_td_emotionless:0 "Emotionless"
 trait_td_emotionless_desc:0 "§LThere is no emotion for this species. Some common social phenomena are not observed in their society.§!"
-TRAIT_TD_EMOTIONLESS_EFFECT:0 "$mod_planet_jobs_society_research_produces_mult$: §R-2.5%§!\n$MOD_TD_FORCED_HAPPINESS$"
 
 trait_td_psychopathic:0 "Psychopathic"
 trait_td_psychopathic_desc:0 "§LThere is no distinct emotion for this species. These emotional deficiencies are usually resolved by impulsive homicides, a constant threat to the existence of this species.§!"
-TRAIT_TD_PSYCHOPATHIC_EFFECT:0 "$MOD_POP_GROWTH_SPEED$: §R-10%§!\n$MOD_ARMY_DAMAGE_MULT$: §R-10%§!\n$MOD_TD_FORCED_HAPPINESS$"
 
 
 # POP Happiness
@@ -384,7 +377,6 @@ trait_td_arrested_learning_desc:0 "§LMembers of this species are slow to learn 
 
 trait_td_eternal_youth:0 "Eternal Youth"
 trait_td_eternal_youth_desc:0 "§LThis species will never die of old age. With eternity in reach, they have lost their spirit of challenge, their curiosity; only an extreme fear of being hurt remains.§!"
-TRAIT_TD_ETERNAL_YOUTH_EFFECT:0 "$MOD_LEADER_SPECIES_EXP_GAIN$: §R-60%§!\n$MOD_ARMY_DAMAGE_MULT$: §R-12.5%§!\n$MOD_ARMY_MORALE$: §R-15%§!\n$MOD_TD_LEADER_IMMORTAL$"
 
 trait_td_unhurried:0 "Unhurried"
 trait_td_unhurried_desc:0 "§LFor this species, time flies slowly. They mature somewhat slowly but they they can live unusually long.§!"
@@ -715,7 +707,6 @@ trait_td_umbral_shroud_desc:0 "§LMembers of this species can project a small in
 
 trait_td_thymoleptic_implants:0 "Thymoleptic Implants"
 trait_td_thymoleptic_implants_desc:0 "§LMembers of this species have eliminated unnecessary emotion with implants and focus on serving for the benefit of their species.§!"
-TRAIT_TD_THYMOLEPTIC_IMPLANTS_EFFECT:0 "$mod_planet_jobs_produces_mult$: §G+2.5%§!\n$MOD_POP_AMENITIES_USAGE_MULT$: §G-2.5%§!\n$MOD_TD_FORCED_HAPPINESS$"
 
 trait_td_pseudo_cybernetics:0 "Pseudo-cybernetics"
 trait_td_pseudo_cybernetics_desc:0 "§LMembers of this species always carry a mobile data link that assists in some simple mathematical processes and provides access to an online database this. However, is not efficient.§!"
@@ -1057,3 +1048,48 @@ TRAIT_TD_RBOT_EXCELLENT_EFFECT:0 "$MOD_TD_TRAIT_POINT_ADD$: §G+2§!"
 trait_td_rbot_scrap:0 "Scrap"
 trait_td_rbot_scrap_desc:0 "§LThese machines are heaps of junk relative to other machines.§!"
 TRAIT_TD_RBOT_SCRAP_EFFECT:0 "$MOD_TD_TRAIT_POINT_ADD$: §R-1§!"
+
+
+
+# *
+# 2021-09-17 Update (Lem)
+# *
+
+trait_td_humn_heroism:0 "$trait_td_heroism$"
+trait_td_humn_heroism_desc:0 "$trait_td_heroism_desc$"
+
+trait_td_humn_born_to_rule:0 "$trait_td_born_to_rule$"
+trait_td_humn_born_to_rule_desc:0 "$trait_td_born_to_rule_desc$"
+
+trait_td_rept_camouflage:0 "$trait_td_camouflage$"
+trait_td_rept_camouflage_desc:0 "$trait_td_camouflage_desc$"
+
+trait_td_rept_dragon_scales:0 "$trait_td_dragon_scales$"
+trait_td_rept_dragon_scales_desc:0 "$trait_td_dragon_scales_desc$"
+
+trait_td_avin_aerobatics:0 "$trait_td_aerobatics$"
+trait_td_avin_aerobatics_desc:0 "$trait_td_aerobatics_desc$"
+
+trait_td_avin_flying:0 "$trait_td_flying$"
+trait_td_avin_flying_desc:0 "$trait_td_flying_desc$"
+
+trait_td_arth_carapace:0 "$trait_td_carapace$"
+trait_td_arth_carapace_desc:0 "$trait_td_carapace_desc$"
+
+trait_td_arth_tail_blades:0 "$trait_td_tail_blades$"
+trait_td_arth_tail_blades_desc:0 "$trait_td_tail_blades_desc$"
+
+trait_td_mols_translucent_skin:0 "$trait_td_translucent_skin$"
+trait_td_mols_translucent_skin_desc:0 "$trait_td_translucent_skin_desc$"
+
+trait_td_mols_boneless:0 "$trait_td_boneless$"
+trait_td_mols_boneless_skin_desc:0 "$trait_td_boneless_desc$"
+
+trait_td_plnt_harmonization:0 "$trait_td_harmonization$"
+trait_td_plnt_harmonization_desc:0 "$trait_td_harmonization_desc$"
+
+trait_td_plnt_fruitage:0 "$trait_td_fruitage$"
+trait_td_plnt_fruitage_desc:0 "$trait_td_fruitage_desc$"
+
+trait_td_necr_living_dead:0 "$trait_td_living_dead$"
+trait_td_necr_living_dead_desc:0 "$trait_td_living_dead_desc$"
