@@ -23,7 +23,6 @@ trait_td_multi_hiveminded = {
 	cost = 0
 	potential_crossbreeding_chance = 0
 	sorting_priority = 9
-	custom_tooltip = TRAIT_TD_MULTI_HIVEMINDED_EFFECT
 
 	modification = no
 
@@ -59,7 +58,7 @@ trait_td_multi_hiveminded = {
 	modifier = {
 		planet_jobs_worker_produces_mult = 0.075
 		planet_jobs_unity_produces_mult = 0.125
-		leader_skill_levels = -2
+		leader_skill_levels = -1
 	}
 }
 
@@ -67,7 +66,6 @@ trait_td_multi_hiveminded = {
 trait_td_emotionless = {
 	cost = 1
 	potential_crossbreeding_chance = 1.00
-	custom_tooltip = TRAIT_TD_EMOTIONLESS_EFFECT
 	
 	opposites = {
 		"trait_hive_mind"
@@ -86,7 +84,7 @@ trait_td_emotionless = {
 
 	forced_happiness = yes
 	modifier = {
-		planet_jobs_society_research_produces_mult = -0.10
+		planet_jobs_society_research_produces_mult = -0.025
 	}
 }
 
@@ -94,7 +92,6 @@ trait_td_emotionless = {
 trait_td_psychopathic = {
 	cost = -2
 	potential_crossbreeding_chance = 1.00
-	custom_tooltip = TRAIT_TD_PSYCHOPATHIC_EFFECT
 	
 	opposites = {
 		"trait_hive_mind"
@@ -113,7 +110,7 @@ trait_td_psychopathic = {
 
 	forced_happiness = yes
 	modifier = {
-		pop_growth_speed = -0.125
+		pop_growth_speed = -0.10
 		army_damage_mult = 0.10
 	}
 }
@@ -290,7 +287,9 @@ trait_td_assimilation = {
 		"trait_nonadaptive"
 		"trait_td_fast_adaption"
 		"trait_td_camouflage"
+		"trait_td_rept_camouflage"
 		"trait_td_harmonization"
+		"trait_td_plnt_harmonization"
 		"trait_td_slow_adaption"
 		"trait_td_nostalgia"
 		"trait_td_paradise_lost"
@@ -316,7 +315,9 @@ trait_td_fast_adaption = {
 		"trait_adaptive"
 		"trait_nonadaptive"
 		"trait_td_camouflage"
+		"trait_td_rept_camouflage"
 		"trait_td_harmonization"
+		"trait_td_plnt_harmonization"
 		"trait_td_slow_adaption"
 		"trait_td_nostalgia"
 		"trait_td_paradise_lost"
@@ -341,16 +342,44 @@ trait_td_camouflage = {
 		"trait_adaptive"
 		"trait_nonadaptive"
 		"trait_td_harmonization"
+		"trait_td_plnt_harmonization"
 		"trait_td_slow_adaption"
 		"trait_td_nostalgia"
 		"trait_td_paradise_lost"
 	}
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { MAM AVI ART MOL FUN PLANT NECROID HUM PRE_MAM PRE_AVI PRE_ART PRE_MOL PRE_FUN }
 	slave_cost = { energy = 25 }
 
 	modifier = {
 		pop_environment_tolerance = 0.05
 		army_health = 0.10
+	}
+}
+
+
+trait_td_rept_camouflage = {
+	cost = 1
+	potential_crossbreeding_chance = 1.00
+	icon = "gfx/interface/icons/traits/imported_icons/trait_bioadaptability.dds"
+
+	opposites = {
+		"trait_robust"
+		"trait_extremely_adaptive"
+		"trait_adaptive"
+		"trait_nonadaptive"
+		"trait_td_harmonization"
+		"trait_td_slow_adaption"
+		"trait_td_nostalgia"
+		"trait_td_paradise_lost"
+	}
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { REP PRE_REP }
+	slave_cost = { energy = 25 }
+
+	modifier = {
+		pop_environment_tolerance = 0.075
+		army_health = 0.15
 	}
 }
 
@@ -369,6 +398,34 @@ trait_td_harmonization = {
 		"trait_td_paradise_lost"
 	}
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { MAM REP AVI ART MOL NECROID HUM PRE_MAM PRE_REP PRE_AVI PRE_ART PRE_MOL }
+	ai_weight = { weight = 0 }
+	slave_cost = { energy = 25 }
+
+	modifier = {
+		pop_environment_tolerance = 0.075
+		pop_growth_from_immigration = -0.25
+		pop_resettlement_cost_mult = 0.50
+	}
+}
+
+
+trait_td_plnt_harmonization = {
+	cost = -1
+	potential_crossbreeding_chance = 1.00
+	icon = "gfx/interface/icons/traits/trait_td_harmonization.dds"
+
+	opposites = {
+		"trait_robust"
+		"trait_extremely_adaptive"
+		"trait_adaptive"
+		"trait_nonadaptive"
+		"trait_td_slow_adaption"
+		"trait_td_nostalgia"
+		"trait_td_paradise_lost"
+	}
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { PLANT FUN PRE_FUN }
 	ai_weight = { weight = 0 }
 	slave_cost = { energy = 25 }
 

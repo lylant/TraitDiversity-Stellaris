@@ -87,10 +87,34 @@ trait_td_fruitage = {
 		"trait_td_abominations"
 	}
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { MAM REP AVI ART MOL NECROID HUM PRE_MAM PRE_REP PRE_AVI PRE_ART PRE_MOL }
 	slave_cost = { energy = 25 }
 
 	modifier = {
 		planet_jobs_food_produces_mult = 0.075
+	}
+}
+
+
+trait_td_plnt_fruitage = {
+	cost = 1
+	potential_crossbreeding_chance = 1.00
+	icon = "gfx/interface/icons/traits/imported_icons/leader_trait_food.dds"
+
+	opposites = {
+		"trait_agrarian"
+		"trait_td_hunter_gatherers"
+		"trait_td_hunters"
+		"trait_td_gatherers"
+		"trait_td_eolithic"
+		"trait_td_abominations"
+	}
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	species_class = { PLANT FUN PRE_FUN }
+	slave_cost = { energy = 25 }
+
+	modifier = {
+		planet_jobs_food_produces_mult = 0.125
 	}
 }
 

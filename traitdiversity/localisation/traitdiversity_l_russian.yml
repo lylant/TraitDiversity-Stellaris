@@ -18,10 +18,6 @@ mod_planet_pops_minerals_upkeep_mult:0 "Содержание поселений 
 
 mod_planet_pops_consumer_goods_upkeep_mult:0 "Содержание поселений £consumer_goods£ (ТМС)"
 
-MOD_TD_FORCED_HAPPINESS:0 "§YСчастье отключено, поселение не будет затронуто модификаторами счастья.§!"
-
-MOD_TD_LEADER_IMMORTAL:0 "§GБессмертный§!"
-
 MOD_TD_LEADER_AGE_RANGE:0 "Возраст нанимаемых лидеров"
 
 MOD_TD_TRAIT_POINT_ADD:0 "Доступное количество черт"
@@ -37,15 +33,12 @@ MOD_TD_TRAIT_POINT_ADD:0 "Доступное количество черт"
 
 trait_td_multi_hiveminded:0 "Мультиядерный коллективный разум"
 trait_td_multi_hiveminded_desc:0 "§LУ этого вида есть несколько ядер коллективного разума, и они находятся в процессе объединения. Каждое ядро функционирует как лидер, но, к сожалению, у них нет шансов стать хорошими лидерами, поддерживая коллективное сознание.§!"
-TRAIT_TD_MULTI_HIVEMINDED_EFFECT:0 "$mod_planet_jobs_worker_produces_mult$: §G+7.5%§!\n$mod_planet_jobs_unity_produces_mult$: §G+12.5%§!\n$MOD_LEADER_SKILL_LEVELS$: §R-1§!\n$MOD_TD_FORCED_HAPPINESS$"
 
 trait_td_emotionless:0 "Безэмоциональные"
 trait_td_emotionless_desc:0 "§LУ этого вида нет эмоций. Этот обычный социальный феномен не наблюдается в их обществе.\n\n§YСчастье:§! §Gотключено§!"
-TRAIT_TD_EMOTIONLESS_EFFECT:0 "$mod_planet_jobs_society_research_produces_mult$: §R-2.5%§!\n$MOD_TD_FORCED_HAPPINESS$"
 
 trait_td_psychopathic:0 "Психопаты"
 trait_td_psychopathic_desc:0 "§LУ этого вида нет четко определённых эмоций. Эти эмоциональные недостатки обычно устраняются импульсивными убийствами, которые являются постоянной угрозой существованию этого вида.§!"
-TRAIT_TD_PSYCHOPATHIC_EFFECT:0 "$MOD_POP_GROWTH_SPEED$: §R-10%§!\n$MOD_ARMY_DAMAGE_MULT$: §R-10%§!\n$MOD_TD_FORCED_HAPPINESS$"
 
 
 # POP Happiness
@@ -384,7 +377,6 @@ trait_td_arrested_learning_desc:0 "§LЧлены этого вида медле�
 
 trait_td_eternal_youth:0 "Вечно молодые"
 trait_td_eternal_youth_desc:0 "§LЭтот вид никогда не умрет от старости. Достигнув вечности, они утратили дух испытаний, свое любопытство; остается только огромный страх быть раненным.§!"
-TRAIT_TD_ETERNAL_YOUTH_EFFECT:0 "$MOD_LEADER_SPECIES_EXP_GAIN$: §R-60%§!\n$MOD_ARMY_DAMAGE_MULT$: §R-12.5%§!\n$MOD_ARMY_MORALE$: §R-15%§!\n$MOD_TD_LEADER_IMMORTAL$"
 
 trait_td_unhurried:0 "Неторопливые"
 trait_td_unhurried_desc:0 "§LДля этого вида время летит медленно. Они созревают несколько медленно, но они могут жить необычно долго.§!"
@@ -715,7 +707,6 @@ trait_td_umbral_shroud_desc:0 "§LПредставители этого вида
 
 trait_td_thymoleptic_implants:0 "Тимолептические имплантаты"
 trait_td_thymoleptic_implants_desc:0 "§LПредставители этого вида устранили ненужные эмоции с помощью имплантатов и сосредоточились на служении на благо своего вида.§!"
-TRAIT_TD_THYMOLEPTIC_IMPLANTS_EFFECT:0 "$mod_planet_jobs_produces_mult$: §G+2.5%§!\n$MOD_POP_AMENITIES_USAGE_MULT$: §G-2.5%§!\n$MOD_TD_FORCED_HAPPINESS$"
 
 trait_td_pseudo_cybernetics:0 "Псевдокибернетика"
 trait_td_pseudo_cybernetics_desc:0 "§LЧлены этого вида всегда имеют мобильный терминал, который может помочь вычислить некоторый простой математический задачи или получить доступ к базе данных. Неэффективно.§!"
@@ -1057,3 +1048,47 @@ TRAIT_TD_RBOT_EXCELLENT_EFFECT:0 "$MOD_TD_TRAIT_POINT_ADD$: §G+2§!"
 trait_td_rbot_scrap:0 "Мусор"
 trait_td_rbot_scrap_desc:0 "§LЭти машины представляют собой мусор по сравнению с другими машинами.§!"
 TRAIT_TD_RBOT_SCRAP_EFFECT:0 "$MOD_TD_TRAIT_POINT_ADD$: §R-1§!"
+
+
+# *
+# 2021-09-17 Update (Lem)
+# *
+
+trait_td_humn_heroism:0 "$trait_td_heroism$"
+trait_td_humn_heroism_desc:0 "$trait_td_heroism_desc$"
+
+trait_td_humn_born_to_rule:0 "$trait_td_born_to_rule$"
+trait_td_humn_born_to_rule_desc:0 "$trait_td_born_to_rule_desc$"
+
+trait_td_rept_camouflage:0 "$trait_td_camouflage$"
+trait_td_rept_camouflage_desc:0 "$trait_td_camouflage_desc$"
+
+trait_td_rept_dragon_scales:0 "$trait_td_dragon_scales$"
+trait_td_rept_dragon_scales_desc:0 "$trait_td_dragon_scales_desc$"
+
+trait_td_avin_aerobatics:0 "$trait_td_aerobatics$"
+trait_td_avin_aerobatics_desc:0 "$trait_td_aerobatics_desc$"
+
+trait_td_avin_flying:0 "$trait_td_flying$"
+trait_td_avin_flying_desc:0 "$trait_td_flying_desc$"
+
+trait_td_arth_carapace:0 "$trait_td_carapace$"
+trait_td_arth_carapace_desc:0 "$trait_td_carapace_desc$"
+
+trait_td_arth_tail_blades:0 "$trait_td_tail_blades$"
+trait_td_arth_tail_blades_desc:0 "$trait_td_tail_blades_desc$"
+
+trait_td_mols_translucent_skin:0 "$trait_td_translucent_skin$"
+trait_td_mols_translucent_skin_desc:0 "$trait_td_translucent_skin_desc$"
+
+trait_td_mols_boneless:0 "$trait_td_boneless$"
+trait_td_mols_boneless_skin_desc:0 "$trait_td_boneless_desc$"
+
+trait_td_plnt_harmonization:0 "$trait_td_harmonization$"
+trait_td_plnt_harmonization_desc:0 "$trait_td_harmonization_desc$"
+
+trait_td_plnt_fruitage:0 "$trait_td_fruitage$"
+trait_td_plnt_fruitage_desc:0 "$trait_td_fruitage_desc$"
+
+trait_td_necr_living_dead:0 "$trait_td_living_dead$"
+trait_td_necr_living_dead_desc:0 "$trait_td_living_dead_desc$"
