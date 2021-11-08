@@ -34,7 +34,7 @@ trait_td_mols_translucent_skin:0 "$trait_td_translucent_skin$"
 trait_td_mols_translucent_skin_desc:0 "$trait_td_translucent_skin_desc$"
 
 trait_td_mols_boneless:0 "$trait_td_boneless$"
-trait_td_mols_boneless_skin_desc:0 "$trait_td_boneless_desc$"
+trait_td_mols_boneless_desc:0 "$trait_td_boneless_desc$"
 
 trait_td_plnt_harmonization:0 "$trait_td_harmonization$"
 trait_td_plnt_harmonization_desc:0 "$trait_td_harmonization_desc$"
