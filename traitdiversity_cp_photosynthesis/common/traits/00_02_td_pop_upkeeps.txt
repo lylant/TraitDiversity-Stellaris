@@ -20,7 +20,8 @@ trait_td_aura_absorption = {
 	potential_crossbreeding_chance = 0
 	sorting_priority = 9
 
-	modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
 
 	opposites = {
 		"trait_td_therianthropic"
@@ -501,7 +502,8 @@ trait_td_therianthropic = {
 	potential_crossbreeding_chance = 0
 	sorting_priority = 9
 
-	modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
 
 	opposites = {
 		"trait_communal"
@@ -584,7 +586,8 @@ trait_td_vampiric = {
 	potential_crossbreeding_chance = 0
 	sorting_priority = 9
 
-	modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
 
 	opposites = {
 		"trait_td_eternal_youth"

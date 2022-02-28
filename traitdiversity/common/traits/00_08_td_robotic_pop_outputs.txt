@@ -266,7 +266,8 @@ trait_td_rbot_infinity_machines = {
 	cost = -2
 	sorting_priority = 9
 
-	modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
 
 	opposites = {
 		"trait_td_rbot_children_of_singularity"
@@ -295,7 +296,8 @@ trait_td_rbot_children_of_singularity = {
 	cost = 3
 	sorting_priority = 9
 
-	modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
 
 	opposites = {
 		"trait_td_rbot_missing_number"
@@ -399,7 +401,8 @@ trait_td_rbot_missing_number = {
 	cost = -3
 	sorting_priority = 9
 
-	modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
 
 	opposites = {
 		"trait_td_rbot_deus_ex_machina"
@@ -446,7 +449,8 @@ trait_td_rbot_deus_ex_machina = {
 	cost = 2
 	sorting_priority = 9
 
-	modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
 
 	opposites = {
 		"trait_td_rbot_golems"
@@ -464,7 +468,8 @@ trait_td_rbot_golems = {
 	cost = 1
 	sorting_priority = 9
 
-	modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
 
 	opposites = {
 		"trait_td_rbot_automatons"

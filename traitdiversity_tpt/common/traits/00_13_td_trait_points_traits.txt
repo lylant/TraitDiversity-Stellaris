@@ -19,7 +19,8 @@ trait_td_perfect = {
 	sorting_priority = 8
 	custom_tooltip = TRAIT_TD_PERFECT_EFFECT
 
-	modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
 
 	opposites = {
 		"trait_td_gifted"
@@ -38,7 +39,8 @@ trait_td_gifted = {
 	sorting_priority = 8
 	custom_tooltip = TRAIT_TD_GIFTED_EFFECT
 
-	modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
 
 	opposites = {
 		"trait_td_superior"
@@ -113,7 +115,8 @@ trait_td_failure = {
 	sorting_priority = 8
 	custom_tooltip = TRAIT_TD_FAILURE_EFFECT
 
-	modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
 
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 }
@@ -130,7 +133,8 @@ trait_td_rbot_excellent = {
 	sorting_priority = 8
 	custom_tooltip = TRAIT_TD_RBOT_EXCELLENT_EFFECT
 
-	modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
 
 	opposites = {
 		"trait_td_rbot_scrap"
@@ -145,7 +149,8 @@ trait_td_rbot_scrap = {
 	icon = "gfx/interface/icons/traits/trait_td_inferior.dds"
 	custom_tooltip = TRAIT_TD_RBOT_SCRAP_EFFECT
 
-	modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
 
 	allowed_archetypes = { MACHINE }
 }
